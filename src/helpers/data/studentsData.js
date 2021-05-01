@@ -163,6 +163,7 @@ const students = [
   },
 ];
 
+// const getLiveStudents = () => students.filter((student) => !student.isDead);
 const livingStudents = () => {
   const swimming = students.filter((student) => student.isDead === false);
   return swimming;
@@ -172,6 +173,14 @@ const dearlyBeloved = () => {
   const soSad = students.filter((student) => student.isDead === true);
   return soSad;
 };
+
+// const kill = () => {
+// const currentLiveStudents = livingStudents();
+//   const randomStudent = currentLiveStudents[Math.floor(Math.random() * currentLiveStudents.length)];
+//   const index = students.indexOf(randomStudent);
+// students[index].isDead = true;
+// return [getLiveStudents(), getDeadStudents()]
+// };
 
 const followTheLight = () => {
   const byeee = students[Math.floor(Math.random() * students.length)];
