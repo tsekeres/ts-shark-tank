@@ -174,18 +174,12 @@ const dearlyBeloved = () => {
   return soSad;
 };
 
-// const kill = () => {
-// const currentLiveStudents = livingStudents();
-//   const randomStudent = currentLiveStudents[Math.floor(Math.random() * currentLiveStudents.length)];
-//   const index = students.indexOf(randomStudent);
-// students[index].isDead = true;
-// return [getLiveStudents(), getDeadStudents()]
-// };
-
 const followTheLight = () => {
-  const byeee = students[Math.floor(Math.random() * students.length)];
-  byeee[0].isDead = true;
-  return byeee;
+  const currentLiveStudents = livingStudents();
+  const randomStudent = currentLiveStudents[Math.floor(Math.random() * currentLiveStudents.length)];
+  const index = students.indexOf(randomStudent);
+  students[index].isDead = true;
+  return [livingStudents(), dearlyBeloved()];
 };
 
 export {

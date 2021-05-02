@@ -30,13 +30,22 @@ function App() {
         Chum Time
       </Button>
       <h2>Shark Tank</h2>
+      <hr></hr>
       <h2>Swimmers</h2>
       <SharkTank swimmers={swimmers} />
+      <ul>
+        {swimmers.map((liveStudent) => (
+          <li key={liveStudent.id}>
+            {`${liveStudent.firstName} ${liveStudent.lastName}`}
+          </li>
+        ))}
+      </ul>
       <h2>Floaters</h2>
+      <Graveyard floaters={floaters} />
       <ul>
         {floaters.map((liveStudent) => (
           <li key={liveStudent.id}>
-            {`${liveStudent.firstName}`}
+            {`${liveStudent.firstName} ${liveStudent.lastName}`}
           </li>
         ))}
       </ul>
