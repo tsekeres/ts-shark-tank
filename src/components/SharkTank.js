@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import LiveStudent from './LiveStudent';
 
 const SharkTank = ({ swimmers }) => {
-  <ul>
-    {swimmers.map((liveStudents) => (
-      <li key={liveStudents.id}>{`${liveStudents.firstName}`}</li>
+  <>
+    {swimmers.map((student) => (
+      <LiveStudent key={student.id} student={student} />
     ))}
-  </ul>;
-}
+  </>;
+};
 
 SharkTank.PropTypes = {
   swimmers: PropTypes.array.isRequired
-}
+};
 
 export default SharkTank;

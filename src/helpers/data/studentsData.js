@@ -19,6 +19,7 @@ const students = [
   },
   {
     id: 4,
+    image: 'https://avatars2.githubusercontent.com/u/76138733?v=4',
     firstName: 'Casey',
     lastName: 'Walker',
     isDead: false,
