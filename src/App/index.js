@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'reactstrap';
-import './App.scss';
 import { livingStudents, dearlyBeloved, followTheLight } from '../helpers/data/studentsData';
 import SharkTank from '../components/SharkTank';
+import Graveyard from '../components/Graveyard';
+import './App.scss';
 
 function App() {
   const [swimmers, setSwimmers] = useState([]);
@@ -17,38 +18,31 @@ function App() {
     const [living, dead] = followTheLight();
     setSwimmers(living);
     setFloaters(dead);
-    followTheLight();
   };
 
   return (
-    <div className='App'>
+    <div className="App">
+      <h2>Shark Tank</h2>
+      <br></br>
       <Button
-        color='danger'
+        color="danger"
         onClick={sharkAttack}
         disabled={swimmers.length <= 0}
       >
         Chum Time
       </Button>
-      <h2>Shark Tank</h2>
       <hr></hr>
       <h2>Swimmers</h2>
-      <SharkTank swimmers={swimmers} />
-      <ul>
-        {swimmers.map((liveStudent) => (
-          <li key={liveStudent.id}>
-            {`${liveStudent.firstName} ${liveStudent.lastName}`}
-          </li>
-        ))}
-      </ul>
+      <hr></hr>
+      <div className="card-container">
+        <SharkTank swimmers={swimmers} />
+      </div>
+      <hr></hr>
       <h2>Floaters</h2>
-      <Graveyard floaters={floaters} />
-      <ul>
-        {floaters.map((liveStudent) => (
-          <li key={liveStudent.id}>
-            {`${liveStudent.firstName} ${liveStudent.lastName}`}
-          </li>
-        ))}
-      </ul>
+      <hr></hr>
+      <div className="card-container-2">
+        <Graveyard floaters={floaters} />
+      </div>
     </div>
   );
 }

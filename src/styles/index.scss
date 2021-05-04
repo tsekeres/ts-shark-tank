@@ -4,3 +4,20 @@
 body {
   background-color: $favColor;
 }
+
+.App {
+  text-align: center;
+}
+
+.card-container, .card-container-2 {
+  display: inline-block;
+  flex-flow: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; 
+
+  .card {
+    width: 140px;
+    margin: 5px;
+  }
+}

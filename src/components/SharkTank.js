@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LiveStudent from './LiveStudent';
 
-const SharkTank = ({ swimmers }) => {
-  <>
-    {swimmers.map((student) => (
-      <LiveStudent key={student.id} student={student} />
+const SharkTank = ({ swimmers }) => (
+  <div>
+    {swimmers.map((students) => (
+      <LiveStudent key={students.id} students={students} />
     ))}
-  </>;
-};
+  </div>
+);
 
-SharkTank.PropTypes = {
+SharkTank.propTypes = {
   swimmers: PropTypes.array.isRequired
 };
 
