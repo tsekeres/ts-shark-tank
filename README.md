@@ -19,7 +19,7 @@ List of features:
 This app is growing but already has a colorful screen and a funcitonal random selector button that switches cards to a new section. I also added a fun animation of Bruce the shark that floats by in the tank.
 
 Screenshots of your project:
-https://github.com/tsekeres/ts-shark-tank/blob/main/src/assets/Screenshot%20(20).png
+![Screenshot (20)](https://user-images.githubusercontent.com/74842096/117239780-06f14500-adf5-11eb-829d-89fa7552a282.png)
 
 List of contributors and links to their GH profiles
 Link to Loom video:
