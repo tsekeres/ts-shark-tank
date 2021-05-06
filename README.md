@@ -18,7 +18,7 @@ List of features:
 This app is growing but already has a colorful screen and a funcitonal random selector button that switches cards to a new section. I also added a fun animation of Bruce the shark that floats by in the tank.
 
 Screenshots of your project:
-https://github.com/tsekeres/ASSIGNMENT-Tamagotchi/blob/main/screenshots/Screenshot%20(14).png
+https://github.com/tsekeres/ts-shark-tank/blob/main/src/assets/Screenshot%20(20).png
 
 List of contributors and links to their GH profiles
 Link to Loom video:
