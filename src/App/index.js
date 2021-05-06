@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import { livingStudents, dearlyBeloved, followTheLight } from '../helpers/data/studentsData';
 import SharkTank from '../components/SharkTank';
 import Graveyard from '../components/Graveyard';
+import bruceShark from '../assets/bruceShark.png';
 import '../styles/index.scss';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="flier">
+        <img src={`${bruceShark}`} />
+      </div>
       <h2>Shark Tank</h2>
       <br></br>
       <Button
