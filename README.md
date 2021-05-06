@@ -9,6 +9,7 @@ Did this one old school on a piece of paper! Coming soon...
 
 Link to the deployed project:
 ts-shark-tank.netlify.app
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b22cc840-04b4-4c38-82bc-03216ded3802/deploy-status)](https://app.netlify.com/sites/ts-shark-tank/deploys)
 
 Description of the user:
