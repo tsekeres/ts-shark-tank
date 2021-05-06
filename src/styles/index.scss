@@ -10,14 +10,14 @@ body {
 }
 
 .card-container, .card-container-2 {
-  display: inline-block;
-  flex-flow: row;
-  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
   text-align: center;
   justify-content: center; 
 
   .card {
-    width: 140px;
+    border: 1px solid black !important;
+    width: 130px;
     margin: 5px;
   }
 }

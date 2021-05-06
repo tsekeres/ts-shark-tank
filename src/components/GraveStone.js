@@ -17,8 +17,8 @@ const GraveStone = ({ students }) => (
       alt="Card image cap"
     />
     <CardBody>
-      <CardTitle tag="h5">R.I.P</CardTitle>
-      <CardSubtitle tag="h6" className="mb-2 text-muted">
+      <CardTitle tag="h6">R.I.P</CardTitle>
+      <CardSubtitle tag="h6" className="text-muted">
         {`${students.firstName} ${students.lastName}`}
       </CardSubtitle>
     </CardBody>

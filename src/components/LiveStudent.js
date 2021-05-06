@@ -13,8 +13,8 @@ const LiveStudent = ({ students }) => (
       alt='Card image cap'
     />
     <CardBody>
-      <CardTitle tag='h5'>E-14<br></br>Swimmers</CardTitle>
-      <CardSubtitle tag='h6' className='mb-2 text-muted'>
+      <CardTitle tag='h6'>E-14<br></br>Swimmers</CardTitle>
+      <CardSubtitle tag='h6' className='text-muted'>
         {`${students.firstName} ${students.lastName}`}
       </CardSubtitle>
     </CardBody>

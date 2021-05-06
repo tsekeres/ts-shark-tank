@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import LiveStudent from './LiveStudent';
 
 const SharkTank = ({ swimmers }) => (
-  <div>
+  <div className="card-container">
     {swimmers.map((students) => (
       <LiveStudent key={students.id} students={students} />
     ))}

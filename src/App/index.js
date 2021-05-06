@@ -3,21 +3,21 @@ import { Button } from 'reactstrap';
 import { livingStudents, dearlyBeloved, followTheLight } from '../helpers/data/studentsData';
 import SharkTank from '../components/SharkTank';
 import Graveyard from '../components/Graveyard';
-import './App.scss';
+import '../styles/index.scss';
 
 function App() {
   const [swimmers, setSwimmers] = useState([]);
-  const [floaters, setFloaters] = useState([]);
+  const [sinkers, setSinkers] = useState([]);
 
   useEffect(() => {
     setSwimmers(livingStudents());
-    setFloaters(dearlyBeloved());
+    setSinkers(dearlyBeloved());
   }, []);
 
   const sharkAttack = () => {
     const [living, dead] = followTheLight();
     setSwimmers(living);
-    setFloaters(dead);
+    setSinkers(dead);
   };
 
   return (
@@ -34,15 +34,11 @@ function App() {
       <hr></hr>
       <h2>Swimmers</h2>
       <hr></hr>
-      <div className="card-container">
-        <SharkTank swimmers={swimmers} />
-      </div>
+      <SharkTank swimmers={swimmers} />
       <hr></hr>
-      <h2>Floaters</h2>
+      <h2>Sinkers</h2>
       <hr></hr>
-      <div className="card-container-2">
-        <Graveyard floaters={floaters} />
-      </div>
+      <Graveyard sinkers={sinkers} />
     </div>
   );
 }
